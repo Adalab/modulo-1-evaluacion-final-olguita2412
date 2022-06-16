@@ -5,7 +5,30 @@
   margin: 0;
   padding: 0; }
 
+.hero {
+  height: 100vh;
+  background: url(../assets/images/header.jpg) cover repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .hero__title {
+    font-size: 2.4rem;
+    color: #0c474b;
+    font-weight: bold;
+    text-align: center; }
+  .hero__link {
+    text-decoration: none;
+    color: white;
+    background-color: #0c474b;
+    width: 176px;
+    height: 48px;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px; }
+
 :root {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%; }
 
 /*# sourceMappingURL=main.css.map */

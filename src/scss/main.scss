@@ -2,11 +2,14 @@
 @import 'core/reset';
 @import 'components/code';
 @import 'components/links';
-@import 'layout/page';
+@import 'layout/main';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/hero';
+@import 'layout/aside';
 @import 'pages/index';
 
 :root {
     font-family: $font-family;
+    font-size: 62.5%;
 }
