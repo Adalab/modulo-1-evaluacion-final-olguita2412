@@ -17,8 +17,7 @@
         align-items: center;
         @media all and (min-width:1728px) {
             width: 50vw;
-            align-items: flex-start;
-           
+            align-items: flex-start;  
         }
         &--title {
             font-size: 2.4rem;
@@ -36,7 +35,7 @@
         &--text {
             font-size: 1.4rem;
             text-align: center;
-            padding-bottom: 30px;
+            padding: 0px 20px 30px 20px;
             @media all and (min-width:1728px) {
                 width: 281px;
                 text-align: left; 
@@ -63,6 +62,7 @@
         width: 100vw;
         @media all and (min-width:1728px) {
             width: 50vw;
+            height: 100vh;
         }
     }
 }

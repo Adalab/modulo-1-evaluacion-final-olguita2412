@@ -17,13 +17,16 @@
         grid-template-rows: repeat(3, 1fr);
         width: 100vw;
         padding: 0 100px;
+        padding-bottom: 17px;
         justify-content: center;
         @media all and (min-width:900px) {
             grid-template-rows: none;
             grid-template-columns: repeat(3, 1fr);
+            padding-bottom: 75px;
         }
         @media all and (min-width:1728px) {
             padding: 0 239px;
+            padding-bottom: 80px;
         }
         &--img {
             width: 90px;

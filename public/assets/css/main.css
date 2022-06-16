@@ -29,14 +29,17 @@ a {
     grid-template-rows: repeat(3, 1fr);
     width: 100vw;
     padding: 0 100px;
+    padding-bottom: 17px;
     justify-content: center; }
     @media all and (min-width: 900px) {
       .principal__list {
         grid-template-rows: none;
-        grid-template-columns: repeat(3, 1fr); } }
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 75px; } }
     @media all and (min-width: 1728px) {
       .principal__list {
-        padding: 0 239px; } }
+        padding: 0 239px;
+        padding-bottom: 80px; } }
     .principal__list--img {
       width: 90px;
       height: 90px;
@@ -168,21 +171,54 @@ a {
 
 .footer {
   background-color: #0c474b;
-  color: #F0EBE5;
+  color: #b6c8c9;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 56px;
-  gap: 20px; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .footer__container {
+    width: 208px;
+    padding-top: 56px;
+    padding-bottom: 36px; }
+    @media all and (min-width: 900px) {
+      .footer__container {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 74px; } }
+    @media all and (min-width: 900px) {
+      .footer__container {
+        width: 100vw;
+        padding-bottom: 131px; } }
   .footer__nav {
-    justify-content: left; }
+    padding-bottom: 20px; }
+  .footer__title {
+    font-size: 2rem;
+    padding: 10px 5px; }
+    @media all and (min-width: 900px) {
+      .footer__title {
+        font-size: 2.4rem; } }
   .footer__links {
-    color: #F0EBE5; }
+    color: #b6c8c9;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    padding: 5px; }
+    @media all and (min-width: 900px) {
+      .footer__links {
+        font-size: 1.6rem; } }
   .footer__arrow {
-    color: #F0EBE5;
-    padding: 15px 30px;
-    position: relative;
-    left: 45%; }
+    color: #b6c8c9;
+    padding: 5px;
+    position: absolute;
+    transform: translate(40vw, 50vh); }
+    @media all and (min-width: 900px) {
+      .footer__arrow {
+        transform: translate(40vw, 10vh); } }
+
+.rrss {
+  padding-top: 10px; }
 
 .aside {
   background-color: #F0EBE5;
@@ -220,7 +256,7 @@ a {
     .aside__section--text {
       font-size: 1.4rem;
       text-align: center;
-      padding-bottom: 30px; }
+      padding: 0px 20px 30px 20px; }
       @media all and (min-width: 1728px) {
         .aside__section--text {
           width: 281px;
@@ -243,7 +279,8 @@ a {
     width: 100vw; }
     @media all and (min-width: 1728px) {
       .aside__image {
-        width: 50vw; } }
+        width: 50vw;
+        height: 100vh; } }
 
 :root {
   font-family: "Poppins", sans-serif;

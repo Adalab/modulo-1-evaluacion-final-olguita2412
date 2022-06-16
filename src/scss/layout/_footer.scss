@@ -1,22 +1,56 @@
 .footer {
     background-color: $color-darkgreen;
-    color: $color-beige;
+    color: $color-lightgreen;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding-top: 56px;
-    gap: 20px;
+    &__container {
+        width: 208px;
+        padding-top: 56px;
+        padding-bottom: 36px;
+        @media all and (min-width:900px) {
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 74px;
+        }
+        @media all and (min-width:900px) {
+            width: 100vw;
+            padding-bottom: 131px;
+        }
+    }
     &__nav {
-        justify-content: left;
+        padding-bottom: 20px;
+    }
+    &__title {
+        font-size: 2rem;
+        padding: 10px 5px; 
+        @media all and (min-width:900px) {
+            font-size: 2.4rem;
+        }
     }
     &__links {
-        color: $color-beige;
+        color: $color-lightgreen;
+        font-size: 1.4rem;
+        font-weight: lighter;
+        padding: 5px;
+        @media all and (min-width:900px) {
+            font-size: 1.6rem;
+        }
     }
-
     &__arrow {
-        color: $color-beige;
-        padding: 15px 30px ;
-        position: relative;
-        left: 45%;
+        color: $color-lightgreen;
+        padding: 5px;
+        position: absolute;
+        transform: translate(40vw, 50vh); 
+        @media all and (min-width:900px) {
+            transform: translate(40vw, 10vh); 
+        }
     }
+}
+.rrss {
+    padding-top: 10px;
 }
