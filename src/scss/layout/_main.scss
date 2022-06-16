@@ -1,0 +1,50 @@
+.principal {
+    width: 100vw;
+    background-color: $color-beige;
+    &__title {
+        color: $color-darkgreen;
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding: 40px 10px;
+        margin: 0 10vw;
+    }
+    &__span {
+        text-transform: uppercase;
+    }
+    &__list {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        width: 100vw;
+        justify-content: center;
+        &--img {
+            width: 90px;
+            height: 90px;
+            margin: 47px 0;
+        }
+        &--title {
+            color: $color-darkgreen;
+            width: 208px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            padding-bottom: 12px;
+        }
+        &--text {
+            color: $color-darkgreen;
+            width: 208px;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+}
+.principal__list1, .principal__list2, .principal__list3 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.secondary {
+    background-color: $color-orange;
+    color: white;
+
+}
