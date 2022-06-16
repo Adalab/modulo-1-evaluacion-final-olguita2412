@@ -1,0 +1,41 @@
+.header {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh;
+    grid-template-areas:'ham nav nav logo';
+
+    &__hamb {
+        width: 24px;
+        height: 24px;
+        color: black;
+        grid-area: ham;
+        padding: 7%;
+        position: fixed;
+        
+        @media all and (min-width: 1728px) {
+            display: none;
+        }
+    }
+    &__nav {
+        grid-area: nav;
+        @media all and (max-width: 1728px) {
+            display: none;
+        }
+        
+    }
+    &__logo {
+        width: 215px;
+        height: 100px;
+        grid-area: logo;
+        margin-top: 40px;
+
+    }
+}
+.header__menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;
+    font-size: 1.6rem;
+    color: $color-darkgreen;
+}

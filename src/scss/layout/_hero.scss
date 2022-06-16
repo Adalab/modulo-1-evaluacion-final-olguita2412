@@ -1,9 +1,12 @@
 .hero {
     height: 100vh;
-    background: url(../assets/images/header.jpg) cover repeat;
+    width: 100vw;
+    background: url(https://github.com/Adalab/modulo-1-evaluacion-final-olguita2412/blob/main/src/images/header.jpg?raw=true);
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     &__title {
         font-size: 2.4rem;

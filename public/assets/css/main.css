@@ -5,12 +5,55 @@
   margin: 0;
   padding: 0; }
 
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh;
+  grid-template-areas: 'ham nav nav logo'; }
+  .header__hamb {
+    width: 24px;
+    height: 24px;
+    color: black;
+    grid-area: ham;
+    padding: 7%;
+    position: fixed; }
+    @media all and (min-width: 1728px) {
+      .header__hamb {
+        display: none; } }
+  .header__nav {
+    grid-area: nav; }
+    @media all and (max-width: 1728px) {
+      .header__nav {
+        display: none; } }
+  .header__logo {
+    width: 215px;
+    height: 100px;
+    grid-area: logo;
+    margin-top: 40px; }
+
+.header__menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 75px;
+  font-size: 1.6rem;
+  color: #0c474b; }
+
 .hero {
   height: 100vh;
-  background: url(../assets/images/header.jpg) cover repeat;
+  width: 100vw;
+  background: url(https://github.com/Adalab/modulo-1-evaluacion-final-olguita2412/blob/main/src/images/header.jpg?raw=true);
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center; }
   .hero__title {
     font-size: 2.4rem;
