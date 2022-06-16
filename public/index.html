@@ -16,17 +16,21 @@
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body>
-  <header class="background">
+<body class="body">
+  <header class="background" id="inicio">
       <nav class="header">
           <div class="container">
-              <a class="header__hamb" href="../index.html#" title="menu"><i class="fa-solid fa-bars fa-2x"></i></a>
+              <a class="header__hamb" href="https://adalab.es/" title="menu"><i class="fa-solid fa-bars fa-2x"></i></a>
               <nav>
                   <ul class="header__menu">
-                      <li><a class="header__menu--link" href="https://adalab.es/" title="Productos"> Productos</a></li>
-                      <li><a class="header__menu--link" href="https://adalab.es/" title="Colecciones">Colecciones</a></li>
-                      <li><a class="header__menu--link" href="https://adalab.es/" title="Tienda">Tienda</a></li>
-                      <li><a class="header__menu--link" href="https://adalab.es/" title="Inicio">Inicio</a></li>
+                      <li><a class="header__menu--link" href="https://adalab.es/" title="Productos" target="_blank">
+                              Productos</a></li>
+                      <li><a class="header__menu--link" href="https://adalab.es/" title="Colecciones"
+                              target="_blank">Colecciones</a></li>
+                      <li><a class="header__menu--link" href="../index.html#" title="Tienda" target="_blank">Tienda</a>
+                      </li>
+                      <li><a class="header__menu--link" href="../index.html#inicio" title="Inicio"
+                              target="_blank">Inicio</a></li>
                   </ul>
               </nav>
           </div>
@@ -39,22 +43,24 @@
   </header>
   <main>
       <section class="principal">
-          <h2 class="principal__title">Volverse organizando se siente mejor con <span class="principal__span"> open
-                  spaces</span></h2>
+          <div class="principal__container">
+              <h2 class="principal__title">Volverse organizando se siente mejor con <span class="principal__span"> open
+                      spaces</span></h2>
+          </div>
           <ul class="principal__list">
-              <li class="principal__list1">
+              <li class="principal__item">
                   <img class="principal__list--img" src="./assets/images/icon_1.png" alt="Lo que necesitas"
                       title="Lo que necesitas">
                   <h4 class="principal__list--title">Lo que necesitas</h4>
                   <p class="principal__list--text">Una línea de productos diseñados para todos tus espacios</p>
               </li>
-              <li class="principal__list2">
+              <li class="principal__item">
                   <img class="principal__list--img" src="./assets/images/icon_2.png" alt="Materia prima sostenible"
                       title="Materia prima sostenible">
                   <h4 class="principal__list--title">Materias primas sustentables</h4>
                   <p class="principal__list--text">Todos los productos con materias primas sustentables</p>
               </li>
-              <li class="principal__list3">
+              <li class="principal__item">
                   <img class="principal__list--img" src="./assets/images/icon_3.png" alt="Guía" title="Guía">
                   <h4 class="principal__list--title">Guía</h4>
                   <p class="principal__list--text">Soporte y asesoramiento para ayudarte con tu objetivo</p>
@@ -118,8 +124,7 @@
               </div>
           </nav>
       </div>
-      <a class="footer__arrow" href="../index.html#" title="Ir hacia arriba" target="_blank"><i
-              class="fa-solid fa-arrow-up fa-2x"></i></a>
+      <a class="footer__arrow" href="#inicio" title="Ir hacia arriba"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
 
   </footer>
 </body>

@@ -8,6 +8,19 @@
         font-weight: bold;
         padding: 40px 10px;
         margin: 0 10vw;
+        @media all and (min-width:900px) {
+            width: 535px;
+        }
+        @media all and (min-width:1728px) {
+            font-size: 3.6rem;
+            width: 799px;
+        }
+    }
+    &__container {
+        @media all and (min-width:900px) {
+        display: flex;
+        justify-content: center;
+        }
     }
     &__span {
         text-transform: uppercase;
@@ -49,11 +62,11 @@
             font-size: 1.6rem;
         }
     }
-}
-.principal__list1, .principal__list2, .principal__list3 {
-   display: flex;
+    &__item {
+        display: flex;
    flex-direction: column;
    align-items: center;
+    }
 }
 .secondary {
     background-color: $color-orange;
@@ -88,4 +101,9 @@
         }
     }
 
+}
+.secondary a:hover {
+    font-size: 2.4rem;
+    background-color: white;
+    color: $color-orange;
 }

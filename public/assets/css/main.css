@@ -22,6 +22,17 @@ a {
     font-weight: bold;
     padding: 40px 10px;
     margin: 0 10vw; }
+    @media all and (min-width: 900px) {
+      .principal__title {
+        width: 535px; } }
+    @media all and (min-width: 1728px) {
+      .principal__title {
+        font-size: 3.6rem;
+        width: 799px; } }
+  @media all and (min-width: 900px) {
+    .principal__container {
+      display: flex;
+      justify-content: center; } }
   .principal__span {
     text-transform: uppercase; }
   .principal__list {
@@ -56,11 +67,10 @@ a {
       width: 208px;
       text-align: center;
       font-size: 1.6rem; }
-
-.principal__list1, .principal__list2, .principal__list3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  .principal__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .secondary {
   background-color: #FF975A;
@@ -91,20 +101,22 @@ a {
       .secondary__link {
         margin-bottom: 78px; } }
 
+.secondary a:hover {
+  font-size: 2.4rem;
+  background-color: white;
+  color: #FF975A; }
+
 .background {
   width: 100vw;
   height: 100vh;
   background: url(https://github.com/Adalab/modulo-1-evaluacion-final-olguita2412/blob/main/src/images/header.jpg?raw=true);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  border: solid red; }
+  background-repeat: no-repeat; }
 
 .header {
-  width: 100vw;
-  margin: 0px 10vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center; }
   .header__hamb {
     color: #0c474b;
@@ -115,15 +127,12 @@ a {
       .header__hamb {
         display: none; } }
   .header__logo {
-    margin-top: 20px;
-    margin-right: 30vw; }
-    @media all and (min-width: 1728px) {
-      .header__logo {
-        margin-right: 50vw;
-        gap: 20vw; } }
+    margin-top: 40px; }
   .header__menu {
     display: flex;
-    gap: 20px; }
+    gap: 20px;
+    position: fixed;
+    transform: translate(-32vw); }
     @media all and (max-width: 1728px) {
       .header__menu {
         display: none; } }
@@ -168,6 +177,10 @@ a {
     text-align: center;
     font-size: 1.6rem;
     padding: 10px; }
+
+.hero a:hover {
+  background-color: white;
+  color: #0c474b; }
 
 .footer {
   background-color: #0c474b;
@@ -282,8 +295,16 @@ a {
         width: 50vw;
         height: 100vh; } }
 
+.aside__section a:hover {
+  background-color: #FF975A;
+  color: #b6c8c9;
+  border-radius: 25px; }
+
 :root {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%; }
+
+.body {
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=main.css.map */
