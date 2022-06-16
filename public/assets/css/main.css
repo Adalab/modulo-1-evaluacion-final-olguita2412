@@ -53,7 +53,27 @@ a {
 
 .secondary {
   background-color: #FF975A;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-top: 46px; }
+  .secondary__img {
+    width: 120px;
+    height: 120px; }
+  .secondary__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-top: 10px; }
+  .secondary__text {
+    font-size: 1.4rem;
+    padding: 5px; }
+  .secondary__link {
+    color: white;
+    text-decoration: underline;
+    padding: 17px;
+    font-size: 1.6rem; }
 
 .background {
   width: 100vw;

@@ -46,5 +46,30 @@
 .secondary {
     background-color: $color-orange;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 46px;
+    &__img {
+        width: 120px;
+        height: 120px;
+        
+    }
+    &__title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+    &__text {
+        font-size: 1.4rem;
+        padding: 5px;
+    }
+    &__link {
+        color: white;
+        text-decoration: underline;
+        padding: 17px;
+        font-size: 1.6rem;
+    }
 
 }
