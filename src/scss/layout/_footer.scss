@@ -17,7 +17,7 @@
             justify-content: space-evenly;
             padding-bottom: 74px;
         }
-        @media all and (min-width:900px) {
+        @media all and (min-width:1728px) {
             width: 100vw;
             padding-bottom: 131px;
         }
@@ -45,9 +45,9 @@
         color: $color-lightgreen;
         padding: 5px;
         position: absolute;
-        transform: translate(40vw, 50vh); 
+        transform: translate(40vw, 35vh); 
         @media all and (min-width:900px) {
-            transform: translate(40vw, 10vh); 
+            transform: translate(40vw, 7vh); 
         }
     }
 }
