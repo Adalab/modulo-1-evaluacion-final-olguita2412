@@ -24,15 +24,15 @@ Exercise of module 1´s final evaluation by Olga Rodríguez Garrucho. Creat a we
 
 ### Web responsive mobile:
 
-![Mobile](https://github.com/Adalab/modulo-1-evaluacion-final-olguita2412/blob/main/public/assets/images/movil.jpg?raw=true)
+![Mobile](./src/images/mobile.jpg)
 
 ### Web responsive tablet:
 
-![Desktop](https://github.com/Adalab/modulo-1-evaluacion-final-olguita2412/blob/main/public/assets/images/tablet.jpg?raw=true)
+![Tablet](./src/images/tablet.jpg)
 
 ### Web responsive desktop:
 
-![Desktop](https://github.com/Adalab/modulo-1-evaluacion-final-olguita2412/blob/main/public/assets/images/desktop.jpg?raw=true)
+![Desktop](./src/images/desktop.jpg)
 
 ---
 
