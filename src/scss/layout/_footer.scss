@@ -1,19 +1,26 @@
 .footer {
-    background-color: $color-darkgreen;
-    color: $color-lightgreen;
+    background-color: $color-orange;
+    color: black;
     width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
     &__container {
         width: 208px;
         padding-top: 56px;
         padding-bottom: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
         @media all and (min-width:900px) {
             width: 100vw;
             display: flex;
+            flex-direction: row;
             justify-content: space-evenly;
             padding-bottom: 74px;
         }
@@ -23,7 +30,17 @@
         }
     }
     &__nav {
-        padding-bottom: 20px;
+        &--contacto {
+            order: 1;
+        }
+        &--tienda {
+            order: 2;
+        }
+        &--nosotros {
+            order: 3;
+        }
+
+        
     }
     &__title {
         font-size: 2rem;
@@ -31,9 +48,17 @@
         @media all and (min-width:900px) {
             font-size: 2.4rem;
         }
+        &--contacto {
+            font-size: 2rem;
+            padding: 10px 5px; 
+            @media all and (min-width:900px) {
+                color: red;
+                font-size: 2.4rem;
+            }
+        }
     }
     &__links {
-        color: $color-lightgreen;
+        color: black;
         font-size: 1.4rem;
         font-weight: lighter;
         padding: 5px;
